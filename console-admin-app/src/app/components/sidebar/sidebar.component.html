@@ -1,0 +1,20 @@
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header" *ngIf="authService.isAuthenticated()">
+            <h2>{{authService.usuario.name}}</h2>
+            <h4>{{authService.usuario.email}}</h4>
+            <h4>{{authService.usuario.roles}}</h4>
+        </div>
+        <img src="assets/images/no-usuario.png" alt="Soufiane FADIL" *ngIf="authService.isAuthenticated()">
+    </div>
+    
+    <mat-divider></mat-divider>
+    <h2 matSubheader>Pages</h2>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/" *ngIf="authService.isAuthenticated()&& authService.usuario.roles[0] == 'ROLE_ADMIN'">Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts" *ngIf="authService.isAuthenticated() && authService.usuario.roles[0] == 'ROLE_USER'">Posts</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="" *ngIf="!authService.isAuthenticated()">Login</a>
+   
+    <mat-divider></mat-divider>
+ 
+</mat-nav-list>

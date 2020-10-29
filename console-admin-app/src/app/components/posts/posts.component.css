@@ -1,0 +1,9 @@
+table {
+    width: 100%;
+ }
+
+ .tableBank{
+    width: 100%;
+   overflow-x: auto;
+   white-space: nowrap;
+}

@@ -1,0 +1,10 @@
+-- users
+--INSERT INTO USERS_CONSOLE (id,user_name,pass,enabled,name,last_name,email) VALUES(1,'diego','$2a$10$6ocn7qAgUMPWPabmsuLql.UVgszJhQTJKEfGYdUaP/nBiVUvdB.46',1,'Diego','Panqueva','daerb9011@gmail');
+--INSERT INTO USERS_CONSOLE (id,user_name,pass,enabled,name,last_name,email) VALUES(2,'admin','$2a$10$bZhWUVTQilZRd5CiizgLu..OaQTUKUDhbLLnpqZLRWQPGScuqMMli',1,'Sara','Panqueva','sarasofia2610@gmail.com');
+-- roles
+--INSERT INTO ROLES_CONSOLE (id,name)VALUES(1,'ROLE_USER');
+--INSERT INTO ROLES_CONSOLE (id,name)VALUES(2,'ROLE_ADMIN');
+-- users to roles
+--INSERT INTO USERS_TO_ROLES (USER_ID, ROLE_ID) VALUES (1,1);
+--INSERT INTO USERS_TO_ROLES (USER_ID, ROLE_ID) VALUES (2,2);
+--INSERT INTO USERS_TO_ROLES (USER_ID, ROLE_ID) VALUES (2,1);

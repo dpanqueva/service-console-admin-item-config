@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Hola!</h1>
+<div mat-dialog-content>
+  <p>Está seguro de eliminar este parametro?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="primary" [mat-dialog-close]="true" >Si!</button>
+  <button mat-button color="warn" (click)="cancelDeleteParameter()">No!</button>
+</div>

@@ -1,0 +1,36 @@
+<div class="example-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Banco</mat-label>
+    <mat-select [(ngModel)]="handleSelected" placeholder="Mode">
+      <mat-option *ngIf="!data">Seleccione</mat-option>
+      <mat-option *ngFor="let op of operaciones" [value]="op.aliasInternal">
+        {{op.bankName}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Nombre parametro</mat-label>
+    <input matInput name="paramName" [(ngModel)]="paramName">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Valor parametro</mat-label>
+    <input matInput name="paramValue" [(ngModel)]="paramValue">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Encriptado</mat-label>
+    <mat-select [(ngModel)]="encrypSelected" placeholder="Mode">
+      <mat-option *ngIf="!data">Seleccione</mat-option>
+      <mat-option *ngFor="let op of enctypOptions" [value]="op.id">
+        {{op.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div mat-dialog-actions>
+    <button mat-button color="primary" (click)="saveParameter()">Guardar</button>
+    <button mat-button color="warn" [mat-dialog-close]="false">Cancelar</button>
+  </div>
+
+</div>

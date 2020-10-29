@@ -1,0 +1,29 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Formulario de ingreso</mat-card-title>
+        <mat-card-subtitle>Consola administrativa</mat-card-subtitle>
+    </mat-card-header>
+    <!--<img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
+    <mat-card-content>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Usuario</mat-label>
+                <input matInput name="username" [(ngModel)]="usuario.username" required>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Clave</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="usuario.password" required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button color="primary" (click)="ingresar()">Ingresar</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,12 @@
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('BAVV','ALIAS_KEY_KEYSTORE','avvillas-key',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('BAVV','TYPE_KEYSTORE','JCEKS',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('BAVV','FILE_NAME_KEY_STORE','avvillas-keystore-ath.jck',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('BAVV','BANK.CODE','0052',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('DALE','ALIAS_KEY_KEYSTORE','avvillas-key',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('DALE','TYPE_KEYSTORE','JCEKS',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('DALE','FILE_NAME_KEY_STORE','avvillas-keystore-ath.jck',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('DALE','BANK.CODE','0052',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('BBOG','ALIAS_KEY_KEYSTORE','avvillas-key',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('BBOG','TYPE_KEYSTORE','JCEKS',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('BBOG','FILE_NAME_KEY_STORE','avvillas-keystore-ath.jck',0);
+--insert into bank_parameters (handle, param_name,param_value, is_encrypt) VALUES ('BBOG','BANK.CODE','0052',0);

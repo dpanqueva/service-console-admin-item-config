@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+ }
+
+ .filterInput{
+  border-bottom: 1px solid #000;
+ }
+
+ .tableBank{
+     width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+ }
